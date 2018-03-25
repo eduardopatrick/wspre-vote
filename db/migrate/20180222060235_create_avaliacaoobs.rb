@@ -8,7 +8,6 @@ class CreateAvaliacaoobs < ActiveRecord::Migration[5.1]
       t.string :nome
       t.string :nomeobra
       t.string :orgao
-      t.integer :idobra
 
       t.timestamps
     end
