@@ -18,7 +18,7 @@ end
 
   def parse_image
     image = Paperclip.io_adapters.for(image_base)
-    image.original_filename = cpf + ".jpg"
+    image.original_filename = "image.jpg"
     self.image = image
   end
 
