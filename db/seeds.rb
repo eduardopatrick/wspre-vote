@@ -4,7 +4,6 @@
         nota: Faker::Number.number(10),
         cpf: Faker::Book.title,
         idobra: Faker::Lorem.sentence,
-        orgao: Faker::Lorem.sentence
     })
   end
 
