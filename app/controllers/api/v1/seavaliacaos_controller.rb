@@ -8,7 +8,7 @@ module Api
 
 
         def create
-            seavaliacao = Seavaliacao.new(seavaliacao_params)
+            seavaliacao = Seavaliacao.new(seavaliacaos_params)
 
           if seavaliacao.save
             render json: {status: 'SUCCESS', message:'Saved avaliacao', data:seavaliacao},status: :ok
