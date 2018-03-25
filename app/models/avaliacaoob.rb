@@ -2,6 +2,9 @@ class Avaliacaoob < ApplicationRecord
   attr_accessor :idobra
   attr_accessor :cpf
 
+  
+   validates :cpf, uniqueness: { scope: :idobra,
+       message: "Só acontece de cpf uma vez por idobra" } 
 
   Paperclip.interpolates :idobra do |attachment, style|
     attachment.instance.idobra
@@ -12,10 +15,6 @@ end
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
   before_validation :parse_image
   attr_accessor :image_base
-
-  
-   validates :cpf, uniqueness: { scope: :idobra,
-       message: "Só acontece de cpf uma vez por idobra" } #Return true with SUCESS and return false with ERROR
   
   private
 
