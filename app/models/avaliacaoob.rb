@@ -14,8 +14,7 @@ end
 
   has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "/imagensobras/:nomeobra/:style/:filename",
    :path => ":rails_root/public/imagensobras/:nomeobra/:style/:filename"
-#   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
-   validates_attachment_content_type :image, :content_type => /\Aimage/
+  validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
   before_validation :parse_image
   attr_accessor :image_base
