@@ -1,10 +1,10 @@
 class Avaliacaoob < ApplicationRecord
    attr_accessor :idobra
 #   attr_accessor :cpf
-   attr_accessor :nota
+#    attr_accessor :nota
 
   
-   validates :cpf, uniqueness: { scope: :nota,
+   validates :cpf, uniqueness: { scope: :nomeobra,
        message: "Só acontece de cpf uma vez por idobra" } 
 
   Paperclip.interpolates :idobra do |attachment, style|
