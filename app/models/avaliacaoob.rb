@@ -1,7 +1,7 @@
 class Avaliacaoob < ApplicationRecord
 #    attr_accessor :idobra
    attr_accessor :cpf
-   attr_acessor :image_base
+   attr_accessor :image_base
 #    attr_accessor :nota
 
   
