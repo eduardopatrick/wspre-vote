@@ -3,7 +3,7 @@
         comentario: Faker::Book.title,
         nota: Faker::Number.number(10),
         cpf: Faker::Book.title,
-        nomeobra: Faker::Lorem.sentence,
+        idobra: Faker::Lorem.sentence,
         orgao: Faker::Lorem.sentence
     })
   end
