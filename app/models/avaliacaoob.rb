@@ -1,6 +1,6 @@
 class Avaliacaoob < ApplicationRecord
    attr_accessor :idobra
-#   attr_accessor :cpf
+   attr_accessor :cpf
 #    attr_accessor :nota
 
   
@@ -21,7 +21,7 @@ end
 
   def parse_image
     image = Paperclip.io_adapters.for(image_base)
-    image.original_filename = "image.jpg"
+    image.original_filename = cpf + ".jpg"
     self.image = image
   end
 
