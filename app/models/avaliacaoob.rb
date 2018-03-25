@@ -1,6 +1,7 @@
 class Avaliacaoob < ApplicationRecord
    attr_accessor :idobra
 #   attr_accessor :cpf
+   attr_acessor :nota
 
   
    validates :cpf, uniqueness: { scope: :nota,
