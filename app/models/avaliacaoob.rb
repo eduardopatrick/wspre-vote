@@ -2,7 +2,7 @@ class Avaliacaoob < ApplicationRecord
 
   validates :cpf, uniqueness: { scope: :idobra,
     message: "Só acontece de cpf uma vez por idobra" } #Return true with SUCESS and return false with ERROR
-  attr_accessor :idobra
+#   attr_accessor :idobra
 
   Paperclip.interpolates :idobra do |attachment, style|
     attachment.instance.idobra
