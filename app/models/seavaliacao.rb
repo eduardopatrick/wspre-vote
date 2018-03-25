@@ -1,0 +1,2 @@
+class Seavaliacao < ApplicationRecord
+end
