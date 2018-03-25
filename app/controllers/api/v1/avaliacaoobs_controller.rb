@@ -36,7 +36,7 @@ module Api
         private
 
         def avaliacaoob_params
-          params.permit(:comentario, :nota, :cpf, :nomeobra, :orgao, :nome, :cpf, :email, :idobra,  :image_base, :created_at)
+          params.permit(:comentario, :nota, :cpf, :nomeobra, :orgao, :nome, :cpf, :email, :image_base, :created_at)
         end
       end
     end
