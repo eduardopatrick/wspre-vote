@@ -1,4 +1,8 @@
 class Avaliacaoob < ApplicationRecord
+
+has_one :comentario
+has_many :votos, :through => :comentario
+
    # attr_accessor :nomeobra
    # attr_accessor :cpf
    attr_accessor :image_base
