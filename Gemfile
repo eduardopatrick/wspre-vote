@@ -13,7 +13,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 
-gem "paperclip"
+gem 'paperclip' ~> 5.2.0
 gem 'rack-cors'
 gem 'rack-attack'
 gem 'devise'
