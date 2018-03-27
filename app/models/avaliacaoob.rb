@@ -1,14 +1,13 @@
 class Avaliacaoob < ApplicationRecord
-#    attr_accessor :idobra
-   attr_accessor :cpf
+   # attr_accessor :nomeobra
+   # attr_accessor :cpf
    attr_accessor :image_base
-#    attr_accessor :nota
+   attr_accessor :nota
 
-  
    validates :cpf, uniqueness: { scope: :nomeobra,
-       message: "Só acontece de cpf uma vez por idobra" } 
+       message: "Só acontece de cpf uma vez por idobra" }
 
-  Paperclip.interpolates :idobra do |attachment, style|
+  Paperclip.interpolates :nomeobra do |attachment, style|
     attachment.instance.nomeobra
 end
 
@@ -18,7 +17,7 @@ end
 
   before_validation :parse_image
   attr_accessor :image_base
-  
+
   private
 
   def parse_image
